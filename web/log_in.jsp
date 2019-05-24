@@ -30,6 +30,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <link rel="stylesheet" href="log_in.css"/>
+
     <!-- Google Font -->
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
@@ -299,11 +301,21 @@ desired effect
             <!--------------------------
               | Your Page Content Here |
               -------------------------->
-            <form action="log_in">
-                Login: <input type="text" value="Podaj login"/><br>
-                Hasło: <input type="text" value="Podaj hasło"/><br>
+
+            <form action="log_in" method="post">
+                <div>
+                    Login:
+                    <input type="text" name="login"/><br>
+                </div>
+
+                <div>
+                    Hasło:
+                    <input type="password" name="password"/><br>
+                </div>
                 <button type="submit">Zaloguj</button>
             </form>
+            <% if (request.getAttribute("login_error") != null) {
+            %>Błędny login lub hasło<%}%>
 
         </section>
         <!-- /.content -->
