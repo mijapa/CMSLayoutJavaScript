@@ -220,7 +220,7 @@ desired effect
                                     <a href="#" data-id="profile" class="button btn btn-default btn-flat">Profile</a>
                                 </div>
                                 <div class="pull-right">
-                                    <a href="log_out.jsp" class="btn btn-default btn-flat">Sign out</a>
+                                    <a href="sign_out.jsp" class="btn btn-default btn-flat">Sign out</a>
                                 </div>
                             </li>
                         </ul>
