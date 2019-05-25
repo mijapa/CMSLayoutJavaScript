@@ -186,7 +186,7 @@ desired effect
                             <!-- The user image in the navbar-->
                             <img src="AdminLTE-master/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
                             <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                            <span class="hidden-xs">Alexander Pierce</span>
+                            <span class="hidden-xs">${profile.first_name} ${profile.last_name}</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- The user image in the menu -->
@@ -195,7 +195,7 @@ desired effect
                                      alt="User Image">
 
                                 <p>
-                                    Alexander Pierce - Web Developer
+                                    ${profile.first_name} ${profile.last_name} - Web Developer
                                     <small>Member since Nov. 2012</small>
                                 </p>
                             </li>
@@ -245,7 +245,7 @@ desired effect
                     <img src="AdminLTE-master/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
-                    <p>Alexander Pierce</p>
+                    <p>${profile.first_name} ${profile.last_name}</p>
                     <!-- Status -->
                     <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                 </div>
@@ -324,7 +324,6 @@ desired effect
                 <li data-id="profile" class="change profile button">Profile</li>
 
 
-
             </ol>
         </section>
 
@@ -335,7 +334,7 @@ desired effect
               | Your Page Content Here |
               -------------------------->
             <div class="change home">
-                Witaj użytkowniku!
+                Witaj ${profile.first_name} ${profile.last_name}!
             </div>
             <div class="change pages">
                 Tutaj będą strony użytkownika
@@ -347,10 +346,11 @@ desired effect
                 Tutaj będą znajomi użytkownika
             </div>
             <div class="change profile">
-                Tutaj będzie profil użytkownika
+                Imię: ${profile.first_name}<br>
+                Nazwisko: ${profile.last_name}<br>
+                Firma: ${profile.company}<br>
+                Business: ${profile.business}<br>
             </div>
-
-
         </section>
         <!-- /.content -->
     </div>

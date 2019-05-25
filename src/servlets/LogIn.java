@@ -1,5 +1,7 @@
 package servlets;
 
+import beans.Profile;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,6 +17,12 @@ public class LogIn extends HttpServlet {
         String password = req.getParameter("password");
 
         if (login.equals("mp") && password.equals("mp")) {
+            Profile profile = new Profile();
+            profile.setFirst_name("Michał");
+            profile.setLast_name("Patyk");
+            profile.setCompany("TI");
+            profile.setBusiness("Laboratorium");
+            req.setAttribute("profile", profile);
             req.getRequestDispatcher("/main.jsp").forward(req, resp);
         } else {
             req.setAttribute("login_error", true);

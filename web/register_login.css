@@ -1,0 +1,16 @@
+.register-login {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+}
+
+.form-register-login {
+    position: relative;
+    width: 40%;
+    text-align: right;
+}
+
+.form-register-login * {
+    padding: 2px;
+}
+
