@@ -303,6 +303,7 @@ desired effect
               -------------------------->
 
             <form action="log_in" method="post">
+                Zaloguj się:
                 <div>
                     Login:
                     <input type="text" name="login"/><br>
@@ -316,6 +317,40 @@ desired effect
             </form>
             <% if (request.getAttribute("login_error") != null) {
             %>Błędny login lub hasło<%}%>
+
+            <br><br>
+            <form action="register" method="post">
+                Zarejestruj się:
+                <div>
+                    Login:
+                    <input type="text" name="login"/><br>
+                </div>
+                <div>
+                    Hasło:
+                    <input type="password" name="password"/><br>
+                </div>
+                <div>
+                    Powtórz hasło:
+                    <input type="password" name="password-repeated"/><br>
+                </div>
+                <div>
+                    Firma:
+                    <input type="text" name="firm"/><br>
+                </div>
+                <div>
+                    Business:
+                    <input type="text" name="business"/><br>
+                </div>
+                <button type="submit">Zarejestruj</button>
+            </form>
+
+            <% if ("wrong_password".equals(request.getAttribute("register_error"))) {
+            %>Hasła nie zgadzają się - spróbuj ponownie.<%}%>
+            <% if ("empty_login".equals(request.getAttribute("register_error"))) {
+            %>Login nie może być pusty - spróbuj ponownie.<%}%>
+            <% if ("empty_password".equals(request.getAttribute("register_error"))) {
+            %>Hasło nie może być puste - spróbuj ponownie.<%}%>
+
 
         </section>
         <!-- /.content -->

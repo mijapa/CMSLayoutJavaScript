@@ -15,10 +15,10 @@ public class LogIn extends HttpServlet {
         String password = req.getParameter("password");
 
         if (login.equals("mp") && password.equals("mp")) {
-            req.getRequestDispatcher("/index.jsp").forward(req, resp);
+            req.getRequestDispatcher("/main.jsp").forward(req, resp);
         } else {
             req.setAttribute("login_error", true);
-            req.getRequestDispatcher("/log_in.jsp").forward(req, resp);
+            req.getRequestDispatcher("/register_login.jsp").forward(req, resp);
         }
     }
 }
