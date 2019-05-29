@@ -300,7 +300,7 @@ desired effect
               | Your Page Content Here |
               -------------------------->
             Zostałeś poprawnie wylogowany!<br><br>
-            <a href="register_login.jsp">Zaloguj się ponownie</a>
+            <a href="index.jsp">Zaloguj się ponownie</a>
 
         </section>
         <!-- /.content -->

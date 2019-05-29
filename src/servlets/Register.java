@@ -26,7 +26,7 @@ public class Register extends HttpServlet {
         } else {
             //włóż dane do bazy
         }
-        req.getRequestDispatcher("/register_login.jsp").forward(req, resp);
+        req.getRequestDispatcher("/index.jsp").forward(req, resp);
 
     }
 }
