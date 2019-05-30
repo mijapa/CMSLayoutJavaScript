@@ -9,5 +9,6 @@ $(document).ready(function(){
         $('.' + id).addClass('selected').show();
     });
     $('li.change').hide();
-    $('.home').addClass('selected').show();
+    // $('.home').addClass('selected').show();
+    $('.pages').addClass('selected').show();
 });

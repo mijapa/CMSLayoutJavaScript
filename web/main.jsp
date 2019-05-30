@@ -337,7 +337,9 @@ desired effect
                 Witaj ${profile.first_name} ${profile.last_name}!
             </div>
             <div class="change pages">
-                Tutaj będą strony użytkownika
+                Tutaj będą strony użytkownika<br>
+                <jsp:include page="page.jsp"/>
+
             </div>
             <div class="change functions">
                 Tutaj będą funkcje użytkownika

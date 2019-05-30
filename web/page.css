@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#app-container {
+    height: 100%;
+    overflow: hidden;
+    /*border: 1px solid green;*/
+}
+
+.app-head {
+    /*border: 1px solid darkred;*/
+    text-align: center;
+    font-weight: bold;
+    padding: 3em;
+    background-color: darkgray;
+}
+
+.app-middle {
+    display: flex;
+}
+
+@media screen and (max-width: 600px) {
+    .app-middle {
+        display: block;
+    }
+}
+
+.app-navigation {
+    /*border: 1px solid darkviolet;*/
+    flex: 1;
+}
+
+.app-link {
+    /*border: 1px solid rebeccapurple;*/
+    padding: 1em 2em;
+    margin: 10px;
+    background-color: darkgray;
+    text-align: center;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.app-main {
+    /*border: 1px solid brown;*/
+    flex: 2;
+    display: flex;
+}
+
+.app-main-content {
+    flex: 1;
+    /*border: 1px solid black;*/
+    margin: 10px;
+}
+
+.app-aside {
+    flex: 1;
+    margin: 10px;
+    /*border: 1px solid yellow;*/
+    min-height: 200px;
+}
+
+.app-news-title {
+    text-align: center;
+    font-weight: bold;
+    background-color: darkgrey;
+    padding: 1em;
+}
+
+.app-news-box {
+    border: 10px solid darkgray;
+}
+
+.app-news-content {
+    padding: 10px;
+}
+
+.app-footer {
+    /*border: 1px solid darkcyan;*/
+    padding: 10px;
+    text-align: center;
+}
