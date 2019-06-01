@@ -298,8 +298,13 @@ desired effect
                     <small>Strona domowa</small>
                 </div>
                 <div class="change pages">
-                    Pages
-                    <small>Strony użytkownika</small>
+                    <div class="pages-header">
+                        <div>
+                            Pages
+                            <small>All sites</small>
+                        </div>
+                        <span class="badge bg-green"><a href="#">Create</a></span>
+                    </div>
                 </div>
                 <div class="change functions">
                     Funkcje
@@ -315,16 +320,16 @@ desired effect
                 </div>
 
             </h1>
-            <ol class="breadcrumb">
-                <li data-id="home" class="button"><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li data-id="pages" class="change pages button">Pages</li>
-                <li data-id="functions" class="change functions button">Functions</li>
+            <%--            <ol class="breadcrumb">--%>
+            <%--                <li data-id="home" class="button"><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>--%>
+            <%--                <li data-id="pages" class="change pages button">Pages</li>--%>
+            <%--                <li data-id="functions" class="change functions button">Functions</li>--%>
 
-                <li data-id="friends" class="change friends button">Friends</li>
-                <li data-id="profile" class="change profile button">Profile</li>
+            <%--                <li data-id="friends" class="change friends button">Friends</li>--%>
+            <%--                <li data-id="profile" class="change profile button">Profile</li>--%>
 
 
-            </ol>
+            <%--            </ol>--%>
         </section>
 
         <!-- Main content -->

@@ -12,36 +12,40 @@
     <link rel="stylesheet" href="pages.css"/>
 </head>
 <body>
-Funkcje
-<table>
-    <tr>
-        <th>lp.</th>
-        <th>strona</th>
-        <th>opcje</th>
-        <th>go to</th>
-    </tr>
-    <tr>
-        <td>1.</td>
-        <td>domowa</td>
-        <td>
-            <div class="options">
-                <div class="delete"><a href="#">usuń</a></div>
-                <div data-id="functions" class="button function"><a href="#">functions</a></div>
-            </div>
-        </td>
-        <td><a href="xhome.jsp">-></a></td>
-    </tr>
-    <tr>
-        <td>2.</td>
-        <td>news</td>
-        <td>
-            <div class="options">
-                <div class="delete"><a href="#">usuń</a></div>
-                <div data-id="functions" class="button function"><a href="#">functions</a></div>
-            </div>
-        </td>
-        <td><a href="#">-></a></td>
-    </tr>
-</table>
+<div class="box">
+    <div class="box-header with-border">
+        <h3 class="box-title">PAGES</h3>
+    </div>
+    <div class="box-body">
+        <table class="table table-bordered">
+            <tr>
+                <th>#</th>
+                <th>Bame</th>
+                <th>Functions</th>
+                <th>Go to</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>domowa</td>
+                <td>
+
+                    <div class="badge bg-red"><a href="#">usuń</a></div>
+                    <div data-id="functions" class="badge bg-light-blue"><a href="#">functions</a></div>
+                </td>
+                <td><a href="xhome.jsp">-></a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="box-footer clearfix">
+        <ul class="pagination pagination-sm no-margin pull-right">
+            <li><a href="#">«</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">»</a></li>
+        </ul>
+
+    </div>
+</div>
 </body>
 </html>

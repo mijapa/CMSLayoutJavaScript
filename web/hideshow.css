@@ -1,3 +1,8 @@
 .change {
     display: none;
 }
+
+.pages-header {
+    display: flex;
+    justify-content: space-between;
+}
