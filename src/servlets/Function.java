@@ -13,6 +13,10 @@ public class Function extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String strona = (String) req.getAttribute("strona");
         String imie = (String) req.getAttribute("imie");
+
+        //TODO:obsługa zmiany na stronie
+
+        req.setAttribute("realized", true);
         req.getRequestDispatcher("/main.jsp").forward(req, resp);
     }
 }
