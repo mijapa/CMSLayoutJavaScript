@@ -13,26 +13,57 @@
 </head>
 <body>
 <div id="function-container">
-    <form action="function" method="post">
-        <select name="strona">
-            <option>domowa</option>
-            <option>inna</option>
-        </select>
-        <div class="f-input">
-            <div><label for="imie">Imie</label></div>
-            <div><input type="checkbox" id="imie" name="imie" checked></div>
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">Quick Example</h3>
         </div>
-        <div class="f-input">
-            <div><label for="godzina">Imie</label></div>
-            <div><input type="checkbox" id="godzina" name="godzina" checked></div>
-        </div>
-        <div class="f-input">
-            <div><label for="imie">Imie</label></div>
-            <div><input type="checkbox" id="imie" name="imie" checked></div>
-        </div>
+        <!-- /.box-header -->
+        <!-- form start -->
+        <form role="form">
+            <div class="box-body">
+                <div class="form-group">
+                    <label>Choose site</label>
+                    <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1"
+                            aria-hidden="true">
+                        <option selected="selected">Home page</option>
+                        <option>Other</option>
+                        <option>Another</option>
+                    </select>
+                </div>
 
-        <button type="submit">zatwierdź</button>
-    </form>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> ad.2 Rejestracja Użytkowników
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> ad.3a Ilość dni do urodzin
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> ad.3b Nazwa przedmiotu
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> ad.3c Godzina lub data
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> ad.4 Dodawanie zadań
+                    </label>
+                </div>
+            </div>
+            <!-- /.box-body -->
+
+            <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Zatwierdź</button>
+            </div>
+        </form>
+    </div>
 </div>
 </body>
 </html>

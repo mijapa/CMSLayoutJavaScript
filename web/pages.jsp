@@ -30,7 +30,7 @@
                 <td>
 
                     <div class="badge bg-red"><a href="#">usuń</a></div>
-                    <div data-id="functions" class="badge bg-light-blue"><a href="#">functions</a></div>
+                    <div data-id="functions" class="button badge bg-light-blue"><a href="#">functions</a></div>
                 </td>
                 <td><a href="xhome.jsp">-></a></td>
             </tr>
