@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+a {
+    color: black;
+}
+
 #app-container {
     height: 100%;
     overflow: hidden;

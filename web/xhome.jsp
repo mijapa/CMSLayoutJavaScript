@@ -1,4 +1,6 @@
-<%--
+<%@ page import="java.time.LocalDate" %>
+<%@ page import="java.time.LocalDateTime" %>
+<%@ page import="java.time.temporal.ChronoUnit" %><%--
   Created by IntelliJ IDEA.
   User: micha
   Date: 30.05.19
@@ -9,8 +11,8 @@
 <html>
 <head>
     <title>Page</title>
-    <link rel="stylesheet" href="page.css"/>
-    <script src="page.js"></script>
+    <link rel="stylesheet" href="xhome.css"/>
+    <script src="xhome.js"></script>
 </head>
 <body>
 <div id="app-container">
@@ -32,9 +34,13 @@
                 <div class="app-news-content">
                     Cześć: ${profile.first_name}<br>
                     Dzisiaj jest: ${date}<br>
-                    Godzina:
-                    Przedmiot: TI
+                    Godzina: <%= (LocalDateTime.now().getHour())%>:<%= (LocalDateTime.now().getMinute())%><br>
+                    Firma: TI
                     <div id="urodziny">Urodziny masz za:</div>
+                    <% LocalDate dataUrodzin = LocalDate.parse("2020-01-17");
+                    %>
+                    <%= ChronoUnit.DAYS.between(LocalDate.now(), dataUrodzin)
+                    %>
                 </div>
             </div>
         </div>

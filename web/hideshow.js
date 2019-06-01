@@ -10,5 +10,5 @@ $(document).ready(function(){
     });
     $('li.change').hide();
     // $('.home').addClass('selected').show();
-    $('.pages').addClass('selected').show();
+    $('.functions').addClass('selected').show();
 });

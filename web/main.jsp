@@ -337,12 +337,11 @@ desired effect
                 Witaj ${profile.first_name} ${profile.last_name}!
             </div>
             <div class="change pages">
-                Tutaj będą strony użytkownika<br>
-                <jsp:include page="page.jsp"/>
+                <jsp:include page="pages.jsp"/>
 
             </div>
             <div class="change functions">
-                Tutaj będą funkcje użytkownika
+                <jsp:include page="functions.jsp"/>
             </div>
             <div class="change friends">
                 Tutaj będą znajomi użytkownika

@@ -4,5 +4,3 @@ function f() {
     miejsce.innerHTML = "wesoło";
     return "wyświetlono  nowe"
 }
-
-document.onload = f;
