@@ -21,9 +21,9 @@ $(document).ready(function () {
         $('.selected').hide().removeClass('selected');
         $('.' + site).addClass('selected').show();
     } else {
-        $('.home').addClass('selected').show();
-    }
+        // $('.home').addClass('selected').show(); //default
+        $('.create').addClass('selected').show(); //testing purpose
+        // $('.pages').addClass('selected').show(); //testing purpose
 
-    // $('.pages').addClass('selected').show();
-    $('.create').addClass('selected').show();
+    }
 });
