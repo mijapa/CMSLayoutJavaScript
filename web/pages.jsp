@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="pages.css"/>
 </head>
 <body>
+<div class="confirmation">
+    <% if (request.getAttribute("created") != null) {
+    %>
+    <div class="callout callout-info">
+        <h4>OK!</h4>
+
+        <p>Strona została utworzona</p>
+    </div>
+    <%}%>
+</div>
 <div class="box">
     <div class="box-header with-border">
         <h3 class="box-title">PAGES</h3>

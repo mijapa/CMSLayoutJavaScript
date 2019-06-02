@@ -12,23 +12,13 @@
 </head>
 <body>
 <div id="function-container">
-    <div class="confirmation">
-        <% if (request.getAttribute("created") != null) {
-        %>
-        <div class="callout callout-info">
-            <h4>OK!</h4>
-
-            <p>Strona została utworzona</p>
-        </div>
-        <%}%>
-    </div>
     <div class="box box-primary">
         <div class="box-header with-border">
             <h3 class="box-title">Choose site elements</h3>
         </div>
         <!-- /.box-header -->
         <!-- form start -->
-        <form role="form" action="create" method="get">
+        <form role="form" action="create" method="post">
             <div class="box-body">
                 <div class="form-group">
                     <label>Enter name</label>

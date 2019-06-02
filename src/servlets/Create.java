@@ -12,9 +12,15 @@ public class Create extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        String name = req.getParameter("name");
+        String layout = req.getParameter("layout");
+        String color = req.getParameter("color");
+
+        System.out.println(name + " " + layout + " " + color);
+
         //TODO: obsługa tworzenia strony
 
-        req.setAttribute("site", "functions");
+        req.setAttribute("site", "pages");
         req.setAttribute("created", true);
         req.getRequestDispatcher("/main.jsp").forward(req, resp);
     }

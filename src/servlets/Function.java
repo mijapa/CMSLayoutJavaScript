@@ -11,8 +11,10 @@ import java.io.IOException;
 public class Function extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String strona = (String) req.getAttribute("strona");
-        String imie = (String) req.getAttribute("imie");
+        String site = req.getParameter("site");
+        String registration = req.getParameter("registration");
+
+        System.out.println(site + " " + registration);
 
         //TODO:obsługa zmiany na stronie
 

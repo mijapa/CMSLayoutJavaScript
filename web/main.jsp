@@ -303,7 +303,9 @@ desired effect
                             Pages
                             <small>All sites</small>
                         </div>
-                        <span data-id="create" class="button badge bg-green"><a href="#">Create</a></span>
+                        <div>
+                            <span data-id="create" class="button badge bg-green"><a href="#">Create</a></span>
+                        </div>
                     </div>
                 </div>
                 <div class="change functions">
