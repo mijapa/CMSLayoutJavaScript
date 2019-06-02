@@ -1,5 +1,7 @@
 package servlets;
 
+import util.Database;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,6 +19,8 @@ public class Create extends HttpServlet {
         String color = req.getParameter("color");
 
         System.out.println(name + " " + layout + " " + color);
+        Database database = new Database();
+        database.showMeTheMoney();
 
         //TODO: obsługa tworzenia strony
 
