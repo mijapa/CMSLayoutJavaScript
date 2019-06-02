@@ -1,6 +1,6 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-    $('.button').click(function(evt){
+    $('.button').click(function (evt) {
         evt.preventDefault();
 
         var id = $(this).data('id');
@@ -8,8 +8,14 @@ $(document).ready(function(){
         $('.selected').hide().removeClass('selected');
         $('.' + id).addClass('selected').show();
     });
+
+    $('#site').hide();
+    let site = $('#site').html();
+    console.log('site: ' + site);
+
     $('li.change').hide();
-    // $('.home').addClass('selected').show();
-    $('.functions').addClass('selected').show();
+    $('.' + site).addClass('selected').show();
+
+    // $('.functions').addClass('selected').show();
     // $('.pages').addClass('selected').show();
 });

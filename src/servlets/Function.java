@@ -16,6 +16,7 @@ public class Function extends HttpServlet {
 
         //TODO:obsługa zmiany na stronie
 
+        req.setAttribute("site", "functions");
         req.setAttribute("realized", true);
         req.getRequestDispatcher("/main.jsp").forward(req, resp);
     }

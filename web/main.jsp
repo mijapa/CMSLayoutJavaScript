@@ -303,7 +303,7 @@ desired effect
                             Pages
                             <small>All sites</small>
                         </div>
-                        <span class="badge bg-green"><a href="#">Create</a></span>
+                        <span data-id="create" class="button badge bg-green"><a href="#">Create</a></span>
                     </div>
                 </div>
                 <div class="change functions">
@@ -356,6 +356,9 @@ desired effect
                 Nazwisko: ${profile.last_name}<br>
                 Firma: ${profile.company}<br>
                 Business: ${profile.business}<br>
+            </div>
+            <div class="change create">
+                <jsp:include page="create.jsp"/>
             </div>
         </section>
         <!-- /.content -->
@@ -466,5 +469,8 @@ desired effect
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
      user experience. -->
+
+<%--ten div jest używany do przekazania argumentu z rządania do jquery--%>
+<div id="site">${site}</div>
 </body>
 </html>
