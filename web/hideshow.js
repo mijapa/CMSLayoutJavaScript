@@ -9,13 +9,21 @@ $(document).ready(function () {
         $('.' + id).addClass('selected').show();
     });
 
+    // trick do przekazywania atrybutu z żądania do jQuery
     $('#site').hide();
     let site = $('#site').html();
     console.log('site: ' + site);
 
     $('li.change').hide();
-    $('.' + site).addClass('selected').show();
 
-    // $('.functions').addClass('selected').show();
+    //show part from request or home part
+    if (site != "") {
+        $('.selected').hide().removeClass('selected');
+        $('.' + site).addClass('selected').show();
+    } else {
+        $('.home').addClass('selected').show();
+    }
+
     // $('.pages').addClass('selected').show();
+    $('.create').addClass('selected').show();
 });
