@@ -1,5 +1,7 @@
 package servlets;
 
+import util.SiteCreator;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,6 +21,8 @@ public class Create extends HttpServlet {
         System.out.println(name + " " + layout + " " + color);
 
         //TODO: obsługa tworzenia strony
+        SiteCreator siteCreator = new SiteCreator();
+        siteCreator.createSite("new");
 
 
         req.setAttribute("site", "pages");

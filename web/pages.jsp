@@ -38,11 +38,11 @@
                 <td>1.</td>
                 <td>domowa</td>
                 <td>
-
-                    <div class="badge bg-red"><a href="#">usuń</a></div>
-                    <div data-id="functions" class="button badge bg-light-blue"><a href="#">functions</a></div>
+                    <div class="badge bg-red"><a class="function-a" href="#">usuń</a></div>
+                    <div data-id="functions" class="button badge bg-light-blue"><a class="function-a"
+                                                                                   href="#">functions</a></div>
                 </td>
-                <td><a href="xhome.jsp">-></a></td>
+                <td><a class="function-go" href="xhome.jsp">go</a></td>
             </tr>
         </table>
     </div>
