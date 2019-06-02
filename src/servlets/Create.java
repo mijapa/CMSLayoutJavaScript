@@ -20,6 +20,7 @@ public class Create extends HttpServlet {
 
         //TODO: obsługa tworzenia strony
 
+
         req.setAttribute("site", "pages");
         req.setAttribute("created", true);
         req.getRequestDispatcher("/main.jsp").forward(req, resp);
