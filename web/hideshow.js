@@ -21,8 +21,8 @@ $(document).ready(function () {
         $('.selected').hide().removeClass('selected');
         $('.' + site).addClass('selected').show();
     } else {
-        // $('.home').addClass('selected').show(); //default
-        $('.create').addClass('selected').show(); //testing purpose
+        $('.home').addClass('selected').show(); //default
+        // $('.create').addClass('selected').show(); //testing purpose
         // $('.pages').addClass('selected').show(); //testing purpose
 
     }

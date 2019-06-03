@@ -26,7 +26,10 @@
             </ul>
         </div>
         <div class="app-main">
-            <div class="app-main-content">główna zawartość</div>
+            <div class="app-main-content">
+                ${pages[0].content}
+                <%%>
+            </div>
         </div>
         <div class="app-aside">
             <div class="app-news-title">news</div>

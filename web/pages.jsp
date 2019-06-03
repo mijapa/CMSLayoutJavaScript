@@ -1,4 +1,5 @@
-<%--
+<%@ page import="beans.Page" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: micha
   Date: 31.05.19
@@ -35,15 +36,29 @@
                 <th>Go to</th>
             </tr>
             <tr>
-                <td>1.</td>
-                <td>domowa</td>
+                    <%
+    List<Page> pages = (List<Page>)session.getAttribute("pages");
+    if(pages!=null) {
+        int i=0;
+        for (Page p : pages) {
+            i++;
+            %>
+            <tr>
+                <td><%=i%>.</td>
+                <td><%=p.getName()%>
+                </td>
                 <td>
                     <div class="badge bg-red"><a class="function-a" href="#">usuń</a></div>
                     <div data-id="functions" class="button badge bg-light-blue"><a class="function-a"
                                                                                    href="#">functions</a></div>
                 </td>
-                <td><a class="function-go" href="xhome.jsp">go</a></td>
-            </tr>
+                <td><a class="function-go" href="xhome.jsp?a=<%=i%>">go</a></td>
+
+            <tr>
+                    <%
+                        }
+                    }
+                %>
         </table>
     </div>
     <div class="box-footer clearfix">

@@ -1,6 +1,9 @@
 package beans;
 
-public class Pages {
+import lombok.Data;
+
+@Data
+public class Page {
     private String name = "Nie nadano";
     private String layout = "Nie nadano";
     private String color = "blue";
