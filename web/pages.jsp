@@ -48,7 +48,7 @@
                 <td><%=p.getName()%>
                 </td>
                 <td>
-                    <div class="badge bg-red"><a class="function-a" href="#">usuń</a></div>
+                    <div class="badge bg-red"><a class="function-a" href="delete?a=<%=i%>">usuń</a></div>
                     <div data-id="functions" class="button badge bg-light-blue"><a class="function-a"
                                                                                    href="#">functions</a></div>
                 </td>
