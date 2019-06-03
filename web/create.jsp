@@ -41,6 +41,11 @@
                     <input name="color" type="color" class="form-control my-colorpicker1 colorpicker-element">
                 </div>
 
+                <div class="form-group">
+                    <label>Enter content</label>
+                    <input name="content" class="form-control" type="text" placeholder="Default input">
+                </div>
+
 
             </div>
             <!-- /.box-body -->
