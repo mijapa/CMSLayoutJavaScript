@@ -30,7 +30,7 @@
         <table class="table table-bordered">
             <tr>
                 <th>#</th>
-                <th>Bame</th>
+                <th>Name</th>
                 <th>Functions</th>
                 <th>Go to</th>
             </tr>
